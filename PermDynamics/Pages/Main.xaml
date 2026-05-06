@@ -1,0 +1,30 @@
+﻿<Page x:Class="PermDynamics.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PermDynamics.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="782"
+      Title="Main">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="34*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/main.jpg"/>
+        </Grid.Background>
+        <Label Content="PermDynamics" HorizontalAlignment="Center" Margin="113,279,102.8,72.6" VerticalAlignment="Center"
+               Foreground="White" FontSize="36" FontWeight="Bold" Height="58" Width="261"/>
+        <Image HorizontalAlignment="Center" Height="100" Margin="121,179,255.8,130.6" VerticalAlignment="Center" Width="100"
+               Source="/Images/icon.png"/>
+        <Label Content="Укажите начальное значение акции:" Grid.Column="1" Margin="12.2,191,82.4,192.6"
+               VerticalAlignment="Center" Foreground="White" Height="26" HorizontalAlignment="Center"/>
+        <TextBox x:Name="tb_value" Grid.Column="1" Height="25" Margin="12.2,217,10.4,167.6" VerticalContentAlignment="Center"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Center" HorizontalAlignment="Center" Width="283"/>
+        <Button Click="OpenPageChart" Content="Продолжить" Grid.Column="1" HorizontalAlignment="Center"
+                Margin="195.2,247,10.4,137.6" VerticalAlignment="Center" Width="100" Height="25" Background="White" BorderBrush="Black"/>
+    </Grid>
+</Page>
