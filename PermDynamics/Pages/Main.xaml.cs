@@ -24,5 +24,12 @@ namespace PermDynamics.Pages
         {
             InitializeComponent();
         }
+
+        private void OpenPageChart(object sender, RoutedEventArgs e)
+        {
+            float value = Convert.ToInt32(tb_value.Text);
+            MainWindow.init.pointsInfo.Add(new Classes.PointInfo(value));
+            MainWindow.init.frame.Navigate(new Pages.Chart());
+        }
     }
 }

@@ -20,9 +20,13 @@ namespace PermDynamics
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
+        public List<Classes.PointInfo> pointsInfo = new List<Classes.PointInfo>();
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+            frame.Navigate(new Pages.Main());
         }
     }
 }
